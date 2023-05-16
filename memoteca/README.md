@@ -5,6 +5,6 @@ Esse projeto foi criado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## Servidor de desenvolvimento
 
-Para rodar a aplicação basta abrir o terminal e digitar o comendo `ng serve`. Navegar para `http://localhost:4200/`. 
+Para rodar a aplicação basta abrir o terminal e digitar o comando `ng serve`. Navegar para `http://localhost:4200/`. 
 
 
