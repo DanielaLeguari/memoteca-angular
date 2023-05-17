@@ -10,7 +10,7 @@
  5. [Property Binding](#property-binding)
  6. [Event Binding](#event-binding)
  7. [Two-way Data Binding](#to-way-data-binding)
- 8. [](#)
+ 8. [Navegação com roteamento](#router)
  9. [](#)
  10. [](#)
  11. [](#)
@@ -79,3 +79,14 @@
 - Utilizamos a diretiva de atributo ngModel, que faz parte do FormsModule;
 - Exemplo: [(ngModel)]="pensamento.conteudo";
 - A diretivangModel é muito utilizada em formulários justamente pela sua capacidade de realizar uma vinculação bidirecional.
+
+
+<div id='router'/>
+
+
+## Navegação com roteamento
+
+- Com o router-outlet, informamos ao Angular que queremos que os componentes sejam carregados dinamicamente. Mas não informamos quais componentes ele deve carregar e em quais momentos eles devem ser carregados.
+- Acessando o arquivo app-routing.module.ts, temos a constante `routes` que representa as rotas da aplicação.
+- As rotas de uma aplicação são um array (arranjo, em português), pois são múltiplas. Portanto, para cada rota, informaremos um objeto diferente.
+- ➡️ Sempre que criamos um path com o caminho vazio, devemos adicionar outra propriedade chamada pathMatch, que possui dois valores: prefix e full. Selecionaremos o full, pois queremos que toda a URL seja considerada. Se o prefix for selecionado, somente o endereço da página inicial (antes da primeira barra) será considerado.
