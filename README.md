@@ -1,13 +1,32 @@
-# memoteca-angular
-Curso Alura
+# Projeto Memoteca Angular
+### Curso Alura: Aplique os conceitos e desenvolva seu primeiro CRUD
 
-# Framework Angular
+# Índice
+
+ 1. [Angular](#angular)
+ 2. [Como criar uma Aplicacao](#aplicacao)
+ 3. [Conceito SPA](#spa)
+ 4. [Componentes Angular](#componentes)
+ 5. [Property Binding](#property-binding)
+ 6. [Event Binding](#event-binding)
+ 7. [Two-way Data Binding](#to-way-data-binding)
+ 8. [](#)
+ 9. [](#)
+ 10. [](#)
+ 11. [](#)
+
+<div id='angular'/> 
+
+## Framework Angular
 
 - Estrutura baseada em componentes;
 - Coleção de bibliotecas integradas;
 - Conjunto de ferramentas;
 
-# Criação de uma aplicação
+<div id='aplicacao'/> 
+
+## Criação de uma aplicação
+
 - NodeJS;
 - Angular CLI; `npm install -g @angular/cli` ;
 - `ng new nome-da-aplicacao` para criar a aplicação;
@@ -15,4 +34,48 @@ Curso Alura
 - O próximo passo para inicializar o projeto é entrar na pasta e rodar `ng serve` ou `ng serve --open`; 
 - `ng generate component nome-do-componete` ou `ng g c nome-do-componente` para criar um novo componente;
 
-## Aplicação de página Única SPA
+
+<div id='spa'/> 
+
+## Aplicação de página Única SPA(Single Page Application)
+
+- Significa que todas as funções de seu aplicativo existem em uma única página HTML. 
+- À medida que os usuários acessam os recursos do seu aplicativo, o navegador precisa renderizar apenas as partes que interessam ao usuário, em vez de carregar uma nova página. 
+- Esse padrão pode melhorar significativamente a experiência do usuário do seu aplicativo.
+
+
+<div id='componentes'/> 
+
+## Componentes Angular
+
+- Cada componente criado possui  quatro arquivos sendo:
+1. nome-do-arquivo.component.css -> CSS do componente;
+2. nome-do-arquivo.component.html -> o template;
+3. nome-do-arquivo.component.spec.ts -> arquivo de teste;
+4. nome-do-arquivo.component.ts -> lógica typescript;
+
+<div id="property-binding"/>
+
+## Property Binding
+
+- É a associação de dados unidirecional e utilizamos [], para rendenizar o conteúdo, utilizamos o recurso de "Propoerty Binding com interpolação" e utilizamos {{ conteudo }}.
+
+
+<div id='event-binding'/> 
+
+## Event Binding
+
+- O ´Event Binding´ é um tipo unidirecional de Data Binding (ou associação de dados). Mas enquanto o Property Binding envia dados do component para o template, o Event Binding faz o contrário, envia dados do template para o component;
+- O Property Binding usa colchetes [] enquanto o Event Binding usa parênteses ().
+
+
+<div id='to-way-data-binding'/> 
+
+## Two-way Data Binding
+
+- Em Angular o ("one-way data binding") representa uma via de mão única, enquanto o fluxo bidirecional ("two-way data binding") seria uma via de mão dupla;
+- A sintaxe do o fluxo de dados bidirecional é uma junção das duas que vimos antes: colchetes [] e parênteses (), formando assim a famosa banana na caixa.
+- Para configurarmos o data binding bidirecional, utilizaremos uma diretiva no input de pensamento do arquivo HTML;
+- Utilizamos a diretiva de atributo ngModel, que faz parte do FormsModule;
+- Exemplo: [(ngModel)]="pensamento.conteudo";
+- A diretivangModel é muito utilizada em formulários justamente pela sua capacidade de realizar uma vinculação bidirecional.
