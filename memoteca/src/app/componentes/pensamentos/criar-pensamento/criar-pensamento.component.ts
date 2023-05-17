@@ -12,4 +12,12 @@ export class CriarPensamentoComponent {
     autoria: 'dev',
     modelo: ''
   }
+
+  criarPensamento(){
+    alert("Novo Pensamento criado");
+  }
+
+  cancelarPensamento(){
+    alert("Pensamento cancelado!");
+  }
 }
