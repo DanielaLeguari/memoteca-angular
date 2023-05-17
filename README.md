@@ -11,7 +11,7 @@
  6. [Event Binding](#event-binding)
  7. [Two-way Data Binding](#to-way-data-binding)
  8. [Navegação com roteamento](#router)
- 9. [](#)
+ 9. [Diretivas](#diretivas)
  10. [](#)
  11. [](#)
 
@@ -90,3 +90,18 @@
 - Acessando o arquivo app-routing.module.ts, temos a constante `routes` que representa as rotas da aplicação.
 - As rotas de uma aplicação são um array (arranjo, em português), pois são múltiplas. Portanto, para cada rota, informaremos um objeto diferente.
 - ➡️ Sempre que criamos um path com o caminho vazio, devemos adicionar outra propriedade chamada pathMatch, que possui dois valores: prefix e full. Selecionaremos o full, pois queremos que toda a URL seja considerada. Se o prefix for selecionado, somente o endereço da página inicial (antes da primeira barra) será considerado.
+
+
+<div id='diretivas'/>
+
+
+# Diretivas
+
+- `Diretivas de componentes:`usado com um modelo. Esse tipo de diretiva é a mais comum.
+📌 Ex. <app-listarPensamentos>
+
+- `Diretivas estruturais:`altera o layout do DOM adicionando e removendo elementos DOM.
+📌 Ex. NgIf, NgFor. NgSwitch.
+
+- `Diretivas de atributos:`altera a aparência ou o comportamento de um elemento, componente ou outra diretiva.
+📌 Ex. NgClass, NgStyle.
