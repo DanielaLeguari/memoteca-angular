@@ -12,8 +12,10 @@
  7. [Two-way Data Binding](#to-way-data-binding)
  8. [Navegação com roteamento](#router)
  9. [Diretivas](#diretivas)
- 10. [](#)
- 11. [](#)
+ 10. [JSON Server](#json-server)
+ 11. [Interfaces](#interfaces)
+ 12. [Services](#services)
+ 13. [Injeção de dependências](#injecao)
 
 <div id='angular'/> 
 
@@ -105,3 +107,42 @@
 
 - `Diretivas de atributos:`altera a aparência ou o comportamento de um elemento, componente ou outra diretiva.
 - 📌 Ex. NgClass, NgStyle.
+
+
+<div id='json-server'/>
+
+
+# JSON Server
+
+- A Ferramenta JSON Server faz uma simulação de back-end simulando uma API.
+- Neste projeto criei a pasta `backend` e executei o comando `npm init -y`  para criar o package.json.
+- Instação do json-server `npm i json-server`.
+- Foi criada na pasta backend o arquivo `db.json`.
+- Como teste, digitei três pensamentos.
+- E acessei o package.json, na seção "scripts":{} alterei o comando test para `start` -> "start": "json-server --watch db.json --port 3000".
+
+
+
+<div id='interfaces'/>
+
+
+# Interfaces
+
+- Para evitar que ocorram erros na base de dados e garantir a sua integridade, devemos criar um modelo de retorno da API. No Angular, chamamos este modelo de "interface", ou "tipagem estrutural".
+
+
+<div id='services'/>
+
+
+# Services
+
+- O `service` (serviço, em português) contém a lógica de negócios ele é   responsável pela comunicação com o servidor. Este arquivo contém todas as requisições ao servidor, ao mesmo tempo que nos auxilia a separar informações importantes e o modo de obtê-las.
+- Para criar um service `ng g service`.
+- O arquivo service se trata de uma classe typescript que possui o decorador @Injectable do pacote @angular/core. Isso significa que esta classe é "injetável", ou seja, pode ser utilizada em outros componentes e classes através do método de injeção de dependências.
+
+<div id='injecao'/>
+
+
+# Injeção de dependência
+
+- No Angular, a injeção de dependência é feita via construtor, onde especificamos um parâmetro com o tipo da dependência e ao colocar o modificador de acesso private, fazemos com que esse atributo seja automaticamente declarado como atributo dessa classe.
