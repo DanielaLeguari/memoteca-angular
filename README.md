@@ -16,6 +16,8 @@
  11. [Interfaces](#interfaces)
  12. [Services](#services)
  13. [Injeção de dependências](#injecao)
+ 14. [Http Client](#http-client)
+ 15. [Observables](#observables)
 
 <div id='angular'/> 
 
@@ -146,3 +148,21 @@
 # Injeção de dependência
 
 - No Angular, a injeção de dependência é feita via construtor, onde especificamos um parâmetro com o tipo da dependência e ao colocar o modificador de acesso private, fazemos com que esse atributo seja automaticamente declarado como atributo dessa classe.
+
+
+<div id='http-client' />
+
+
+# Http Client
+
+- Executa solicitações HTTP. Este serviço está disponível como uma classe injetável, com métodos para realizar requisições HTTP. Cada método de solicitação possui várias assinaturas e o tipo de retorno varia de acordo com a assinatura chamada (principalmente os valores de observe e responseType).
+
+
+<div id='observables'/>
+
+
+# Observables
+
+- O Observable funciona de forma similar ao promise do Javascript, mas com a vantagem de possuir uma transferência de dados contínua. Ou seja, o Observable é capaz de emitir dados várias vezes durante a sua existência. Este comando faz parte da biblioteca RXJS, que é utilizada de forma camuflada pelo Angular e já vem instalada na aplicação.
+
+

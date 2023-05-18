@@ -2,8 +2,8 @@
   "pensamentos": [
     {
       "id": 1,
-      "conteudo": "Que bom que você veio editado",
-      "autoria": "Dani",
+      "conteudo": "Que bom que você veio ",
+      "autoria": "dev",
       "modelo": "modelo1"
     },
     {
@@ -15,7 +15,7 @@
     {
       "id": 3,
       "conteudo": "Que bom que você veio",
-      "autoria": "Dani",
+      "autoria": "dev",
       "modelo": "modelo3"
     },
     {
